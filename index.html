@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./simulacion.js"></script>
+    <title>Simulador interactivo</title>
+</head>
+<body>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+    <section class="contenedorTitulo">
+        <article class="titulo">
+            <h1>Simulador interactivo</h1>
+          <h2>Bruno Perez</h2>
+        </article>
+    </section>
+    <section class="contenedorDescripcion">
+        <article class="descripcion">
+            <h3><span>#</span>Descripción</h3>
+            <p>Herramienta para calcular % de descuento + % de iva asociado a un monto puesto por el usuario.</p>
+        </article>
+    </section>
+    <section class="contenedorEjercicio">
+        <article class="ejercicio">
+            <label>Ingrese el monto total de su compra</label>
+            <input placeholder="Introduzca un valor" type="number" id="valorProducto" name="Valor neto del producto" />
+            <label>Descuentos <span>30% por compras sobre 15000</span></label>
+            <input type="text" id="descuentoAsosiado" name="descuento" disabled />
+            <label>IVA del producto <span>19%</span></label>
+            <input type="text" id="ivaProducto" name="Iva del producto" disabled />
+            <label>Total a pagar</label>
+            <input type="text" id="total" name="total" disabled />
+            <button id="btn_calcula" onclick="calcular();" type="submit">Calcular</button>
+            <button id="btn_limpiar" onclick="location.reload()">Limpiar</button>
+        </article>
+    </section>
+    
+</body>
+</html>
