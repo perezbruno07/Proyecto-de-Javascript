@@ -14,7 +14,7 @@ function calcular() {
         descuentoAsosiado = 0;
         document.getElementById('descuentoAsosiado').value = descuentoAsosiado;
     }
-    valorIva = ((valorProducto - descuentoAsosiado) * 0.19);
+    valorIva = ((valorProducto - descuentoAsosiado) * 0.22);
     document.getElementById('ivaProducto').value = valorIva;
     total = (parseInt(valorProducto) - parseInt(descuentoAsosiado)) + parseInt(valorIva);
     document.getElementById('total').value = total;
